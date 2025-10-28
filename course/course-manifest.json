@@ -1,0 +1,16 @@
+[
+  {
+    "id": "workshop-1-vectors",
+    "title": "Workshop 1 - The World of Vectors",
+    "summary": "",
+    "path": "course/workshop-1-vectors.html",
+    "order": 1
+  },
+  {
+    "id": "workshop-2-solving-equations",
+    "title": "Workshop 2 - Solving Equations",
+    "summary": "",
+    "path": "course/workshop-2-solving-equations.html",
+    "order": 2
+  }
+]

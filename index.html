@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Linear Algebra Labs by Ashish Kumar Verma (@imdigitalashish)" />
+    <title>Linear Algebra Labs | Ashish Kumar Verma</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <p class="tagline">Linear Algebra Labs</p>
+        <h1>Linear Algebra Labs by Ashish Kumar Verma (@imdigitalashish)</h1>
+        <p class="subtitle">
+          A guided workshop series exploring vectors, equations, and hands-on intuition for modern linear algebra.
+        </p>
+        <div class="cta-row">
+          <a class="primary-cta" href="#workshops">Start Learning</a>
+          <span class="cta-note">Static site ready for GitHub Pages</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout" id="workshops">
+      <aside class="module-list" aria-label="Workshops">
+        <div class="module-list__header">
+          <h2>Workshops</h2>
+          <p>Follow the labs in sequence or jump straight to the topic you need.</p>
+        </div>
+        <div id="moduleList" class="module-list__items" role="list"></div>
+      </aside>
+
+      <section class="module-viewer" aria-live="polite">
+        <div id="modulePlaceholder" class="module-placeholder">
+          <h3>Select a workshop to begin</h3>
+          <p>Use the list to the left to load each lab. Content appears inside this page—no reloads, no distractions.</p>
+        </div>
+        <iframe
+          id="moduleFrame"
+          class="module-frame"
+          title="Workshop content"
+          loading="lazy"
+          sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Crafted with ❤️ for the Linear Algebra community. Built for GitHub Pages.</p>
+      <p>
+        Created by <span class="author">Ashish Kumar Verma (@imdigitalashish)</span> ·
+        <a href="https://github.com/imdigitalashish" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+
+    <script type="module" src="assets/js/app.js"></script>
+  </body>
+</html>
