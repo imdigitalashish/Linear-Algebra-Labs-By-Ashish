@@ -8,51 +8,48 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-header__inner">
-        <p class="tagline">Linear Algebra Labs</p>
-        <h1>Linear Algebra Labs by Ashish Kumar Verma (@imdigitalashish)</h1>
-        <p class="subtitle">
-          A guided workshop series exploring vectors, equations, and hands-on intuition for modern linear algebra.
-        </p>
-        <div class="cta-row">
-          <a class="primary-cta" href="#workshops">Start Learning</a>
-          <span class="cta-note">Static site ready for GitHub Pages</span>
-        </div>
-      </div>
+    <header class="page-header">
+      <h1>Linear Algebra Labs</h1>
+      <p class="tagline">Course by Ashish Kumar Verma (@imdigitalashish)</p>
     </header>
 
-    <main class="layout" id="workshops">
-      <aside class="module-list" aria-label="Workshops">
-        <div class="module-list__header">
-          <h2>Workshops</h2>
-          <p>Follow the labs in sequence or jump straight to the topic you need.</p>
-        </div>
-        <div id="moduleList" class="module-list__items" role="list"></div>
-      </aside>
+    <main class="page-main">
 
-      <section class="module-viewer" aria-live="polite">
-        <div id="modulePlaceholder" class="module-placeholder">
-          <h3>Select a workshop to begin</h3>
-          <p>Use the list to the left to load each lab. Content appears inside this page—no reloads, no distractions.</p>
+ 
+
+      <section class="workshops" id="workshops">
+        <h2>Workshops</h2>
+        
+        <ul id="workshopList" class="workshop-list"></ul>
+      </section>
+
+           <section>
+        <h2>About the Author</h2>
+        <p>Ashish Kumar Verma is a National Winner In Web Technologies. He likes web technologies and artificial intelligence with touch of Core Sciences Mixed with Machine Learning. He has also written research papers and given talks at big events. He has made an app called Navya AI, which can do many things with AI, such as making images, voices, videos, and more
+
+Some of the awards and achievements that Ashish has received are: National Winner Bronze Medalist in World Skills India (Web Technologies), Rashtriya Bal Vaigyanik Rank 1, AIR 2 in Microsoft National Level Fastest Coder Hackathon, IIT Delhi Best Project Award on Code Day, Delhi, and NEXT GENIUS SCHOLAR. He has also published three research papers in international journals and conferences.
+
+Ashish has also been invited by many prestigious organizations and platforms to share his knowledge and vision. He hosted Pariksha pe Charcha with Hon’ble PM of India Shri Narendra Modi, where he talked with the prime minister. He was invited by Japan Science and Technology to visit Japan under SAKURA for his innovations in computer vision and AI. He delivered talks in NITI Aayog, CBSE National Skill EXPO, UNESCO AI CONFERENCE, and many other events. He is also an Intel AI4 Youth Leader, a NITI Aayog student mentor, and the youngest Microsoft Beta Level Community Leade</p>
+      </section>
+
+      <section class="viewer" id="viewer" hidden>
+        <div style="padding-left: 20px; cursor: pointer;">
+          <h1 onclick="window.location.href = '/'" style="cursor: pointer;">Linear Algebra Labs</h1>
+                <p class="tagline" style="cursor: pointer;">Course by Ashish Kumar Verma (@imdigitalashish)</p>
         </div>
-        <iframe
-          id="moduleFrame"
-          class="module-frame"
-          title="Workshop content"
-          loading="lazy"
-          sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-        ></iframe>
+        <button id="sidebarToggle" class="sidebar-toggle" type="button" aria-controls="viewerSidebar" aria-expanded="false" aria-label="Toggle workshop sidebar">
+          <span aria-hidden="true">⋮</span>
+        </button>
+        <iframe id="moduleFrame" title="Workshop content" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+        <aside id="viewerSidebar" class="viewer-sidebar" aria-label="Workshop navigation" aria-hidden="true">
+          <div class="sidebar-header">
+            <h3>Workshops</h3>
+            <button id="closeSidebar" type="button" class="close-sidebar" aria-label="Close sidebar">×</button>
+          </div>
+          <ul id="sidebarList" class="sidebar-list"></ul>
+        </aside>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>Crafted with ❤️ for the Linear Algebra community. Built for GitHub Pages.</p>
-      <p>
-        Created by <span class="author">Ashish Kumar Verma (@imdigitalashish)</span> ·
-        <a href="https://github.com/imdigitalashish" target="_blank" rel="noopener">GitHub</a>
-      </p>
-    </footer>
 
     <script type="module" src="assets/js/app.js"></script>
   </body>
