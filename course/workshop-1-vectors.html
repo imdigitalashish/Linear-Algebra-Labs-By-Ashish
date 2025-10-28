@@ -133,8 +133,48 @@ window.Quarto = {
 v = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix}\]</span></p>
 <p>At first glance, it’s just two numbers stacked on top of each other. But what are they <em>doing</em> there? Can we think of it as <strong>v</strong> having two buddies — (<span class="math inline">\(v_1\)</span>) and (<span class="math inline">\(v_2\)</span>)? Or maybe as <strong>v</strong> having two <em>directions</em> — one along (<span class="math inline">\(v_1\)</span>), another along (<span class="math inline">\(v_2\)</span>)? Or could it even represent something like an image with two pixels?</p>
 <p>Turns out, it can be all of these, depending on the universe you’re in. That’s the magic of vectors — they’re simple in form, but their possibilities stretch out to infinity.</p>
-<div id="2b242a1f" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"hello"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="bae5a17b" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>vector1 <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>vector2 <span class="op">=</span> [<span class="dv">3</span>,<span class="dv">4</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>What if we add these two?</p>
+<p><span class="math display">\[
+\mathbf{v}_1=\begin{bmatrix}
+1 \\
+2
+\end{bmatrix},\quad
+\mathbf{v}_2=\begin{bmatrix}
+3 \\
+4
+\end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\mathbf{v}_f=\begin{bmatrix}
+1+3 \\
+2+4
+\end{bmatrix}=\begin{bmatrix}
+4 \\
+6
+\end{bmatrix}
+\]</span></p>
+<div id="e5c17771" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> vector1 <span class="op">+</span> vector2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="a9291bf9" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>a <span class="co">## Oops I don't think it's the right answer so we use numpy</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>[1, 2, 3, 4]</code></pre>
+</div>
+</div>
+<div id="63bf196d" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>vector1 <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>])</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>vector2 <span class="op">=</span> np.array([<span class="dv">3</span>,<span class="dv">4</span>])</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(vector2 <span class="op">+</span> vector1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[4 6]</code></pre>
+</div>
 </div>
 
 </main>
